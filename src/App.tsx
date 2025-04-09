@@ -22,7 +22,6 @@ function App() {
   useEffect(() => {
     const debounceTimer = setTimeout(() => {
       if (
-        settings.notificationsEnabled &&
         settings.users.length > 0 &&
         settings.categories.length > 0 &&
         settings.replies.length > 0
