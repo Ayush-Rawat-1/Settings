@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import NotificationSettings from './components/NotificationSettings';
+import ParticularNotifications from './components/ParticularNotifications';
 import MessageCategories from './components/MessageCategories';
 import CustomReply from './components/CustomReply';
 
@@ -22,7 +23,6 @@ function App() {
   useEffect(() => {
     const debounceTimer = setTimeout(() => {
       if (
-        settings.notificationsEnabled &&
         settings.users.length > 0 &&
         settings.categories.length > 0 &&
         settings.replies.length > 0
@@ -64,9 +64,15 @@ function App() {
         setNotificationsEnabled={(value) =>
           setSettings((prev) => ({ ...prev, notificationsEnabled: value }))
         }
+        
+      />
+
+      <hr className="border-dashed border-2 border-gray-300 my-4" />
+
+      <ParticularNotifications 
         users={settings.users}
         setUsers={(users) => setSettings((prev) => ({ ...prev, users }))}
-      />
+       />
 
       <hr className='border-gray-300' />
 

@@ -1,18 +1,13 @@
 import React from "react";
-import ParticularNotifications from "./ParticularNotifications";
 
 interface NotificationSettingsProps {
   notificationsEnabled: boolean;
   setNotificationsEnabled: React.Dispatch<React.SetStateAction<boolean>>;
-  users: string[];
-  setUsers: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
 const NotificationSettings: React.FC<NotificationSettingsProps> = ({
   notificationsEnabled,
   setNotificationsEnabled,
-  users,
-  setUsers,
 }) => {
   return (
     <div className="p-6 mx-auto">
@@ -35,9 +30,9 @@ const NotificationSettings: React.FC<NotificationSettingsProps> = ({
         </label>
       </div>
 
-      <hr className="border-dashed border-2 border-gray-300 my-4" />
+      
 
-      <ParticularNotifications users={users} setUsers={setUsers} />
+      
     </div>
   );
 };

@@ -21,7 +21,7 @@ const ParticularNotifications: React.FC<ParticularNotificationsProps> = ({ users
   };
 
   return (
-    <div className="space-y-4">
+    <div className="p-6 mx-auto">
       <p className="text-sm font-medium">Add users to get particular notifications</p>
 
       <div className="relative max-w-md">
