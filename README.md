@@ -60,6 +60,7 @@ Initially, we considered fetching suggestions for user/category/reply fields fro
 
 ```txt
 src/
+├── main.tsx 
 ├── App.tsx                   # Root component with state and logic
 ├── components/
 │   ├── NotificationSettings.tsx  # Toggle switch and user entry UI
@@ -83,7 +84,7 @@ src/
 ## 📦 Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Ayush-Rawat-1/Settings
 cd project-directory
 npm install
 npm run dev
@@ -105,4 +106,3 @@ npm run dev
 This app demonstrates a clean, scalable way of handling dynamic form inputs and syncing global state with local logic in a React application. The debounce pattern avoids spammy API calls and mimics intelligent auto-saving behavior.
 
 The chosen approach prioritizes simplicity, scalability, and a seamless developer experience.
-
