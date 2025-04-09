@@ -85,7 +85,7 @@ src/
 
 ```bash
 git clone https://github.com/Ayush-Rawat-1/Settings
-cd project-directory
+cd Settings
 npm install
 npm run dev
 ```
