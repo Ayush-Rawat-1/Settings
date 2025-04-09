@@ -41,6 +41,9 @@ const [settings, setSettings] = useState<SettingsState>({
 ### 3. **Debounced API Call**
 A `useEffect` hook listens for changes in the global `settings` state. If all fields are filled and notifications are enabled, it triggers a `fetch` call after a 1-second debounce.
 
+📝 Note:
+Currently, the API call is commented out, and instead, the settings object is logged to the console for demonstration purposes. This allows easy testing and logic inspection without triggering external network requests.
+
 #### Why?
 - Prevents unnecessary API calls while typing
 - Emulates real-world form submission
@@ -104,5 +107,7 @@ npm run dev
 
 ## 🤔 Summary
 This app demonstrates a clean, scalable way of handling dynamic form inputs and syncing global state with local logic in a React application. The debounce pattern avoids spammy API calls and mimics intelligent auto-saving behavior.
+
+While no actual API request is triggered at this stage, the API logic is in place and simply commented out. Console output is used to simulate the call for demonstration purposes.
 
 The chosen approach prioritizes simplicity, scalability, and a seamless developer experience.
