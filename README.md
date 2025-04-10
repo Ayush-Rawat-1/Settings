@@ -7,6 +7,16 @@ This is a simple React + TypeScript application built using Vite. The applicatio
 - Defining message categories
 - Setting up custom replies
 
+## 📽️ Demo
+
+Here's a walkthrough of the application in action:
+
+🎥 [Watch the Sample Demo](./sample.mp4)
+
+This video demonstrates how to use the settings panel, how the global state updates in real time, and how changes are logged with debounce behavior.
+
+---
+
 ## 🚀 Features
 
 - Toggle-based notifications control

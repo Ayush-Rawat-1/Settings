@@ -22,7 +22,7 @@ const ParticularNotifications: React.FC<ParticularNotificationsProps> = ({ users
 
   return (
     <div className="p-6 mx-auto">
-      <p className="text-sm font-medium">Add users to get particular notifications</p>
+      <p className="text-lg font-medium mb-1">Add users to get particular notifications</p>
 
       <div className="relative max-w-md">
         <div className="absolute inset-y-0 start-0 flex items-center ps-3">
@@ -56,7 +56,7 @@ const ParticularNotifications: React.FC<ParticularNotificationsProps> = ({ users
         {users.map((name, index) => (
           <button
             key={index}
-            className="flex cursor-pointer items-center px-3 py-1 rounded-full border border-gray-300 text-sm bg-gray-100 hover:bg-gray-200"
+            className="flex mt-2 cursor-pointer items-center px-3 py-1 rounded-full border border-gray-300 text-sm bg-gray-100 hover:bg-gray-200"
           >
             {name}
             <span
